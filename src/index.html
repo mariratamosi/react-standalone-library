@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Component Demo</title>
+</head>
+<body onload="load()">
+<div id="my-component-container"></div>
+<script src="my-component.min.js"></script>
+<script>
+
+  function load() {
+    var myComponent = new MessageCount.default({
+      message: 'Hello, world 3!',
+      container: document.getElementById('my-component-container'),
+    })
+    console.log(myComponent)
+  }
+
+  /*;*/
+</script>
+</body>
+</html>

@@ -1,7 +1,8 @@
+import React from 'react';
 import './App.css';
 import {useState} from "react";
 
-function App() {
+function App({message}) {
     const [count, setCount] = useState(0)
    const onButtonClick = ()=>{
        console.log("clicked")
@@ -9,6 +10,7 @@ function App() {
     }
   return (
     <div className="App">
+        <h1>{message}</h1>
         <h1>{count}</h1>
       <button onClick={onButtonClick}>Click me</button>
 
