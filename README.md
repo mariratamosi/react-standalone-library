@@ -33,7 +33,7 @@ The purpose of this project is Create A Pure React Component and use it in a non
 [The component name and file name is modifiable via webpack config]
 
 #### Demo
-`https://unpkg.com/react-standalone-library/dist/index.html`
+[https://unpkg.com/react-standalone-library/dist/index.html](https://unpkg.com/react-standalone-library/dist/index.html)
 
 ### Point of Discussion
  ![img.png](img.png)
