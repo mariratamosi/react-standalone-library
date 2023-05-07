@@ -2,20 +2,25 @@
 <html>
   <head>
     <title>My Component Demo</title>
+    <script
+      defer="defer"
+      type="text/javascript"
+      src="https://unpkg.com/browse/react-standalone-library@0.2.0/dist/my-component.min.js"
+    ></script>
   </head>
   <body onload="load()">
     <div id="my-component-container"></div>
     <script
-      defer="defer"
-      src="https://unpkg.com/browse/react-standalone-library@0.1.0/dist/my-component.min.js"
+      type="text/javascript"
+      src="https://unpkg.com/browse/react-standalone-library@0.2.0/dist/my-component.min.js?v=2334"
     ></script>
     <script>
       function load() {
-        var myComponent = new MessageCount.default({
-          message: "Hello, world Now please!",
-          container: document.getElementById("my-component-container"),
-        });
-        console.log(myComponent);
+        // var myComponent = new MessageCount.default({
+        //   message: "React standalone demo!",
+        //   container: document.getElementById("my-component-container"),
+        // });
+        // console.log(myComponent);
       }
 
       /*;*/
