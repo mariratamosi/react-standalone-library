@@ -1,8 +1,7 @@
 ## Standalone react component to use as a library
 
 ###  Introduction
-Using Webpack, The React component is bundled and using babel, it will usable in browser.
-And after publishing to npm, it can used as a library only including the js from unpckg source
+The purpose of this project is Create A Pure React Component and use it in a non-react project by only adding a script file.
 
 ### How to run
 
@@ -31,6 +30,7 @@ And after publishing to npm, it can used as a library only including the js from
         </script>
 
 ````
+[The component name and file name is modifiable via webpack config]
 
 #### Demo
 `https://unpkg.com/react-standalone-library/dist/index.html`
