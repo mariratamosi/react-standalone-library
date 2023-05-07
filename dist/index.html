@@ -4,23 +4,19 @@
     <title>My Component Demo</title>
     <script
       defer="defer"
-      type="text/javascript"
-      src="https://unpkg.com/browse/react-standalone-library@0.2.0/dist/my-component.min.js"
+      src="https://unpkg.com/react-standalone-library/dist/my-component.min.js"
     ></script>
   </head>
   <body onload="load()">
     <div id="my-component-container"></div>
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/browse/react-standalone-library@0.2.0/dist/my-component.min.js?v=2334"
-    ></script>
+    <!-- <script src="my-component.min.js"></script> -->
     <script>
       function load() {
-        // var myComponent = new MessageCount.default({
-        //   message: "React standalone demo!",
-        //   container: document.getElementById("my-component-container"),
-        // });
-        // console.log(myComponent);
+        var myComponent = new MessageCount.default({
+          message: "React standalone demo!!",
+          container: document.getElementById("my-component-container"),
+        });
+        console.log(myComponent);
       }
 
       /*;*/
