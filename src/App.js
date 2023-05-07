@@ -9,11 +9,13 @@ function App({message}) {
        setCount((count)=>{return count+1})
     }
   return (
-    <div className="App">
-        <h1>{message}</h1>
-        <h1>{count}</h1>
-      <button onClick={onButtonClick}>Click me</button>
-
+    <div className="app-container">
+        <div className="header"><div>Test chat app</div></div>
+        <div className="test-container">
+            <h4>{message}</h4>
+            <h4>{count}</h4>
+            <button onClick={onButtonClick}>Click me</button>
+        </div>
     </div>
   );
 }
