@@ -4,7 +4,7 @@ import {useState} from "react";
 
 function App({message}) {
     const [count, setCount] = useState(0)
-   const onButtonClick = ()=>{
+    const onButtonClick = ()=>{
        console.log("clicked")
        setCount((count)=>{return count+1})
     }
