@@ -48,7 +48,7 @@ module.exports = {
   externals: { 'srim-chat': 'srim-chat' },
 };
 
-/*git commit -a -m "update names 2"
+/*git commit -a -m "remove files"
 git push -u origin main
 npm run prepublishOnly
 npm publish
