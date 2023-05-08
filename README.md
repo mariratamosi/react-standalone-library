@@ -13,9 +13,11 @@ The purpose of this project is Create A Pure React Component and use it in a non
 2. Push the changes to main branch
 3. Run
     `npm run prepublishOnly
-     npm publish`
+npm publish`
 
 ### How to use
+
+#### In browser
 ````
         <script src="https://unpkg.com/react-standalone-library/dist/my-component.min.js"></script>
         <script>
@@ -32,8 +34,17 @@ The purpose of this project is Create A Pure React Component and use it in a non
 ````
 [The component name and file name is modifiable via webpack config]
 
-#### Demo
-[https://unpkg.com/react-standalone-library/dist/index.html](https://unpkg.com/react-standalone-library/dist/index.html)
+#### In react project
+
+`````npm i srim-chat`````
+
+````import {SrimChat} from "srim-chat"````
+
+````<SrimChat message={"Test me bro"}/>````
+
+
+### Demo
+[https://unpkg.com/srim-chat/browser/index.html](https://unpkg.com/srim-chat/browser/index.html)
 
 ### Point of Discussion
  ![img.png](img.png)
