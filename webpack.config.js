@@ -47,11 +47,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
     }),
+    new webpack.ProvidePlugin({
+      React: 'react',
+    }),
   ]
 };
 
 
-/*git commit -a -m "double package 2"
+/*git commit -a -m "add react"
 git push -u origin main
 npm run prepublishOnly
 npm publish

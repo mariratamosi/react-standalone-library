@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import {useState} from "react";
 
+console.log('module executed!', useState);
+
 function SrimChat({message}) {
     const [count, setCount] = useState(0)
     const onButtonClick = ()=>{
