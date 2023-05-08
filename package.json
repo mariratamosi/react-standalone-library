@@ -1,9 +1,9 @@
 {
   "name": "srim-chat",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "private": false,
-  "main": "dist/SrimChat.js",
-  "module": "dist/SrimChat.esm.js",
+  "main": "npm_dist/SrimChat.js",
+  "module": "npm_dist/SrimChat.esm.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -14,7 +14,8 @@
     "web-vitals": "^2.1.4"
   },
   "files": [
-    "dist/*"
+    "npm_dist/*",
+    "browser/*"
   ],
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build_dist": "webpack --mode production",
-    "prepublishOnly": "npm-run-all --serial clean build_dist",
+    "build_prod": "webpack --mode production --config browser_webpack.config.js --config npm_webpack.config.js\n",
+    "prepublishOnly": "npm-run-all --serial clean build_prod",
     "clean": "rimraf dist"
   },
   "eslintConfig": {

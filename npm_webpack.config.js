@@ -1,23 +1,19 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   /*In the entry field of the webpack.config.js file,
   * specify the path to the wrapper file that instantiates and appends the component to the DOM.*/
-  entry: {
-      SrimChatW: './src/SrimChatWrapper.js',
-      SrimChat: './src/index_.js',
-  },
+  entry: './src/index_.js',
 
   /*In the output field of the webpack.config.js file,
   * specify the path and filename for the bundled JavaScript file that will contain your component and
   * its dependencies. Also, specify the library and libraryTarget options to make the component available
   * as a standalone module.*/
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
-    library: '[name]',
+    path: path.resolve(__dirname, 'npm_dist'),
+    filename: 'SrimChat.js',
+    library: 'SrimChat',
     libraryTarget: 'umd',
     umdNamedDefine: true,
     globalObject: 'this',
@@ -44,22 +40,12 @@ module.exports = {
     ],
   },
   plugins: [
-      /*In the plugins field of the webpack.config.js file,
-      * add an instance of the HtmlWebpackPlugin plugin to generate an HTML file that
-      * includes the bundled JavaScript file.*/
+    /*In the plugins field of the webpack.config.js file,
+    * add an instance of the HtmlWebpackPlugin plugin to generate an HTML file that
+    * includes the bundled JavaScript file.*/
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-    }),
-    new webpack.ProvidePlugin({
-      React: 'react',
     }),
   ],
   externals: {react: 'react'}
 };
-
-
-/*git commit -a -m "add react"
-git push -u origin main
-npm run prepublishOnly
-npm publish
- */
