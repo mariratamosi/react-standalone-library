@@ -19,6 +19,8 @@ module.exports = {
     filename: '[name].js',
     library: '[name]',
     libraryTarget: 'umd',
+    umdNamedDefine: true,
+    globalObject: 'this',
   },
   module: {
     /*In the module field of the webpack.config.js file,
