@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {useState} from "react";
+import Addition from "./Addition";
 
 console.log('module executed!', useState);
 
@@ -12,6 +13,7 @@ function SrimChat({message}) {
     }
   return (
     <div className="app-container">
+        <Addition/>
         <div className="header"><div>Srim chat app - SrimChat.js</div></div>
         <div className="test-container">
             <h4>{message}</h4>
@@ -19,6 +21,7 @@ function SrimChat({message}) {
             <button onClick={onButtonClick}>Click me</button>
         </div>
     </div>
+
   );
 }
 
