@@ -1,6 +1,6 @@
 {
   "name": "srim-chat",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": false,
   "main": "SrimChat.js",
   "dependencies": {

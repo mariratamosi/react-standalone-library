@@ -6,7 +6,7 @@ module.exports = {
   * specify the path to the wrapper file that instantiates and appends the component to the DOM.*/
   entry: {
       SrimChatW: './src/SrimChatWrapper.js',
-      SrimChat: './src/index.js',
+      SrimChat: './src/SrimChat.js',
   },
 
   /*In the output field of the webpack.config.js file,
@@ -51,7 +51,7 @@ module.exports = {
 };
 
 
-/*git commit -a -m "double package"
+/*git commit -a -m "double package 2"
 git push -u origin main
 npm run prepublishOnly
 npm publish
