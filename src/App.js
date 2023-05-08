@@ -10,7 +10,7 @@ function App({message}) {
     }
   return (
     <div className="app-container">
-        <div className="header"><div>S chat app</div></div>
+        <div className="header"><div>Srim chat app</div></div>
         <div className="test-container">
             <h4>{message}</h4>
             <h4>{count}</h4>

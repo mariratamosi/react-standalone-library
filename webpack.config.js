@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   /*In the entry field of the webpack.config.js file,
   * specify the path to the wrapper file that instantiates and appends the component to the DOM.*/
-  entry: './src/MyComponentWrapper.js',
+  entry: './src/SrimChatWrapper.js',
 
   /*In the output field of the webpack.config.js file,
   * specify the path and filename for the bundled JavaScript file that will contain your component and
@@ -12,8 +12,8 @@ module.exports = {
   * as a standalone module.*/
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 's-chat.min.js',
-    library: 'SChat',
+    filename: 'srim-chat.min.js',
+    library: 'SrimChat',
     libraryTarget: 'umd',
   },
   module: {
@@ -45,5 +45,11 @@ module.exports = {
       template: 'src/index.html',
     }),
   ],
-  externals: { 's-chat': 's-chat' },
+  externals: { 'srim-chat': 'srim-chat' },
 };
+
+/*git commit -a -m "update names 2"
+git push -u origin main
+npm run prepublishOnly
+npm publish
+ */

@@ -5,11 +5,11 @@
 </head>
 <body onload="load()">
 <div id="my-component-container"></div>
-<script src="https://unpkg.com/react-standalone-library/dist/my-component.min.js"></script>
+<script src="https://unpkg.com/react-standalone-library/dist/s-chat.min.js"></script>
 <script>
 
   function load() {
-    var myComponent = new MessageCount.default({
+    var myComponent = new SChat.default({
       message: 'React standalone demo!',
       container: document.getElementById('my-component-container'),
     })
