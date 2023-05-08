@@ -1,6 +1,6 @@
 {
   "name": "srim-chat",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "main": "SrimChat.js",
   "dependencies": {
@@ -12,6 +12,9 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
