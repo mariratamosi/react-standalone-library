@@ -12,8 +12,8 @@ module.exports = {
   * as a standalone module.*/
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'my-component.min.js',
-    library: 'MessageCount',
+    filename: 's-chat.min.js',
+    library: 'SChat',
     libraryTarget: 'umd',
   },
   module: {
@@ -45,5 +45,5 @@ module.exports = {
       template: 'src/index.html',
     }),
   ],
-  externals: { 'my-component': 'my-component' },
+  externals: { 's-chat': 's-chat' },
 };
