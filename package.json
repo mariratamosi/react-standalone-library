@@ -1,8 +1,8 @@
 {
   "name": "srim-chat",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
-  "main": "App.js",
+  "main": "SrimChat.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

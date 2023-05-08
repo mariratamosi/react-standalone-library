@@ -44,8 +44,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
     }),
-  ],
-  externals: { 'srim-chat': 'srim-chat' },
+  ]
 };
 
 
