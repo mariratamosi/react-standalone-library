@@ -1,6 +1,6 @@
 {
   "name": "srim-chat",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "private": false,
   "main": "dist/SrimChat.js",
   "module": "dist/SrimChat.esm.js",
