@@ -7,7 +7,7 @@ module.exports = {
   * specify the path to the wrapper file that instantiates and appends the component to the DOM.*/
   entry: {
       SrimChatW: './src/SrimChatWrapper.js',
-      SrimChat: './src/SrimChat.js',
+      SrimChat: './src/index_.js',
   },
 
   /*In the output field of the webpack.config.js file,
