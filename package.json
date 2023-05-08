@@ -25,7 +25,7 @@
     "build_dist": "webpack --mode production",
     "build_prod": "webpack --mode production --config browser_webpack.config.js --config npm_webpack.config.js\n",
     "prepublishOnly": "npm-run-all --serial clean build_prod",
-    "clean": "rimraf dist"
+    "clean": "rimraf browser npm_dist"
   },
   "eslintConfig": {
     "extends": [
