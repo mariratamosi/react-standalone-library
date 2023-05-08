@@ -4,9 +4,18 @@ import App from './App';
 import SrimChat from "./SrimChat";
 
 export default class SrimChatWrapper {
+    count = 0
+    visible = true
     constructor(options) {
         console.log("yess", this)
         const { message, container } = options;
-        ReactDOM.render(<SrimChat message={message} />, container);
+        this.container = container
+        ReactDOM.render(<SrimChat message={message} visible={this.visible}/>, container);
+    }
+
+    hideChat() {
+        this.count++
+        this.visible = !this.visible
+        ReactDOM.render(<SrimChat message={"Custom - "+this.count} visible={this.visible}/>, this.container);
     }
 }

@@ -5,15 +5,15 @@
 </head>
 <body onload="load()">
 <div id="my-component-container"></div>
-<script src="https://unpkg.com/srim-chat/browser/srim-chat.min.js"></script>
 <script>
-
+  var srimChat, chatInstance;
   function load() {
-    var myComponent = new SrimChat.default({
+    srimChat = new SrimChat.default({
       message: 'Srim Chat demo from demo html',
       container: document.getElementById('my-component-container'),
     })
-    console.log(myComponent)
+    console.log(srimChat)
+    chatInstance = srimChat.getChatInstance();
   }
 
   /*;*/
