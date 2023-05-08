@@ -6,6 +6,7 @@ import Addition from "./Addition";
 console.log('module executed!', useState);
 
 function SrimChat({message}) {
+    console.log('Inside component!', useState);
     const [count, setCount] = useState(0)
     const onButtonClick = ()=>{
        console.log("clicked")
