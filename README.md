@@ -1,7 +1,7 @@
 ## Standalone react component to use as a library
 
 ###  Introduction
-The purpose of this project is Create A Pure React Component and use it in a non-react project by only adding a script file.
+The purpose of this project is to xreate **A Pure React Component** and use it in a **non-react project** by only adding a script file and use in **react projects** through NPM packages.
 
 ### How to run
 
@@ -19,20 +19,21 @@ npm publish`
 
 #### In browser
 ````
+        <!-- Path to recent pablish can be found in npm directory -->
         <script src="https://unpkg.com/react-standalone-library/dist/my-component.min.js"></script>
         <script>
         
           function onLoad() {
-            var myComponent = new MessageCount.default({
+            var myComponent = new SrimChat.default({
               message: 'React standalone demo!!',
-              container: document.getElementById('my-component-container'),
+              container: document.getElementById('your-component-container'),
             })
             console.log(myComponent)
           }
         </script>
 
 ````
-[The component name and file name is modifiable via webpack config]
+[The component name(*SrimChat*) and file name (*my-component.min.js*) is modifiable via webpack config]
 
 #### In react project
 
@@ -40,7 +41,7 @@ npm publish`
 
 ````import {SrimChat} from "srim-chat"````
 
-````<SrimChat message={"Test me bro"}/>````
+````<SrimChat message={"React standalone library"}/>````
 
 
 ### Demo
